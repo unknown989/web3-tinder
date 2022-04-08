@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People's App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header">People's Platform</div>
+    <div class="body">
+        <div class="/">
+            <div class="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <polyline points="15 6 9 12 15 18"></polyline>
+                </svg>
+            </div>
+            <div class="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <polyline points="9 6 15 12 9 18"></polyline>
+                </svg>
+            </div>
+            <div class="cards-container">
+            </div>
+        </div>
+        <div class="/me">
+        </div>
+        <div class="/about">
+            <!-- Implement this too -->
+            <div class="card">
+                <h1 class="light">About</h1>
+                <div class="card-details">
+                    <p>
+                        This is a platform like tinder you just add
+                        your profile and navigate the people cards.
+                        you can't match or reject anyone nor you can chat.
+                        <br><b>NOTE: Ropsten testnet is recommended</b>
+                    </p>
+                    <br>
+                    <div>
+                        <a target="_blank" href="https://github.com/unknown989">
+                            <button class="button">GitHub</button>
+                        </a>
+                        <br>
+                        <a target="_blank" href="https://unknown989.github.io/">
+                            <button class="button">Website</button>
+                        </a>
+                        <br>
+
+                        <a target="_blank" href="https://www.instagram.com/the.alchemist.man/">
+                            <button class="button">Instagram</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navbar-elem" to="/"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+            </svg></div>
+        <div class="navbar-elem" to="/me"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+            </svg></div>
+        <div class="navbar-elem" to="/about"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-exclamation-mark" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 19v.01"></path>
+                <path d="M12 15v-10"></path>
+            </svg></div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.2-rc.0/web3.min.js"></script>
+    <script defer src="./index.js"></script>
+</body>
+
+</html>
