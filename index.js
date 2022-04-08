@@ -268,7 +268,7 @@ const init = () => {
           });
       }
     });
-    getPeople().then(async (_people) => {
+    getPeople().then(async (_people, index) => {
       const addr = await getUserAddress();
       [..._people].map((person) => {
         if (person.addr === addr) {
@@ -281,9 +281,7 @@ const init = () => {
           .replace("{{USER_NAME}}", person.name)
           .replace("{{USER_DESCRIPTION}}", person.description)
           .replace("{{USER_ADDRESS}}", person.addr);
-
-        document.getElementsByClassName("cards-container")[0].innerHTML +=
-          pcard;
+        document.getElementsByClassName("cards-container")[0].innerHTML = pcard;
       });
     });
   }
