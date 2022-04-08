@@ -270,13 +270,12 @@ const init = () => {
     });
     getPeople().then(async (_people) => {
       const addr = await getUserAddress();
-      people = _people;
       [..._people].map((person) => {
         if (person.addr === addr) {
           return;
         }
         let pcard = card;
-        // people.push(person);
+        people.push(person);
         pcard = pcard
           .replace("{{IMAGE_LINK}}", person.image)
           .replace("{{USER_NAME}}", person.name)
